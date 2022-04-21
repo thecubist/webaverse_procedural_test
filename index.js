@@ -43,6 +43,7 @@ export default (e) => {
       physics.removeGeometry(physicsId)
     }
   })
-
+  
+  console.debug("ran correctly")
   return app
 }
