@@ -26,7 +26,7 @@ export default (e) => {
   geometry.setAttribute('normal', new THREE.BufferAttribute(normals, 3))
 
   const material = new THREE.MeshBasicMaterial({
-    color: '#145734',
+    color: '#aa00ff',
     wireframe: true,
   })
 
