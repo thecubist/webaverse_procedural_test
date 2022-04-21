@@ -27,7 +27,7 @@ export default (e) => {
 
   const material = new THREE.MeshBasicMaterial({
     color: '#aa00ff',
-    wireframe: true,
+    wireframe: false,
   })
 
   const mesh = new THREE.Mesh(geometry, material)
