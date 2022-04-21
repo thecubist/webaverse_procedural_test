@@ -14,7 +14,7 @@ const physicsIds = []
 
 export default (e) => {
   const app = useApp()
-  app.name = 'neon-club'
+  app.name = 'CYBERDOG'
   const physics = usePhysics()
 
   const { positions, normals, indices } = physics.dualContouring()
