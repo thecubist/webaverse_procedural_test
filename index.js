@@ -14,7 +14,7 @@ const physicsIds = []
 
 export default (e) => {
   const app = useApp()
-  app.name = 'CYBERDOG2'
+  app.name = 'XRL mk-1'
   const physics = usePhysics()
 
   const { positions, normals, indices } = physics.dualContouring()
@@ -25,7 +25,10 @@ export default (e) => {
   geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
   geometry.setAttribute('normal', new THREE.BufferAttribute(normals, 3))
 
-  const material = new THREE.MeshBasicMaterial({ color: '#AA00FF', wireframe: true, })
+  const material = new THREE.MeshBasicMaterial({
+    color: '#aa00ff',
+    wireframe: true,
+  })
 
   const mesh = new THREE.Mesh(geometry, material)
 
