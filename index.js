@@ -22,13 +22,10 @@ export default (e) => {
   const geometry = new THREE.BufferGeometry()
 
   geometry.setIndex(new THREE.BufferAttribute(indices, 1))
-  geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
-  geometry.setAttribute('normal', new THREE.BufferAttribute(normals, 3))
+  geometry.setAttribute('position', new THREE.BufferAttribute(positions, 5))
+  geometry.setAttribute('normal', new THREE.BufferAttribute(normals, 5))
 
-  const material = new THREE.MeshBasicMaterial({
-    color: '#aa00ff',
-    wireframe: false,
-  })
+  const material = new THREE.MeshBasicMaterial({ color: '#AA00FF', wireframe: false, })
 
   const mesh = new THREE.Mesh(geometry, material)
 
