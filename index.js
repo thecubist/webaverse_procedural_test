@@ -14,18 +14,18 @@ const physicsIds = []
 
 export default (e) => {
   const app = useApp()
-  app.name = 'CYBERDOG'
+  app.name = 'CYBERDOG2'
   const physics = usePhysics()
 
   const { positions, normals, indices } = physics.dualContouring()
 
   const geometry = new THREE.BufferGeometry()
 
-  geometry.setIndex(new THREE.BufferAttribute(indices, 3))
-  geometry.setAttribute('position', new THREE.BufferAttribute(positions, 9))
-  geometry.setAttribute('normal', new THREE.BufferAttribute(normals, 9))
+  geometry.setIndex(new THREE.BufferAttribute(indices, 1))
+  geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
+  geometry.setAttribute('normal', new THREE.BufferAttribute(normals, 3))
 
-  const material = new THREE.MeshBasicMaterial({ color: '#AA00FF', wireframe: false, })
+  const material = new THREE.MeshBasicMaterial({ color: '#AA00FF', wireframe: true, })
 
   const mesh = new THREE.Mesh(geometry, material)
 
