@@ -39,7 +39,8 @@ export default (e) => {
 
   useFrame(({ timestamp }) => {})
   useCleanup(() => {
-    for (const physicsId of physicsIds) {
+    for (const physicsId of physicsIds) 
+    {
       physics.removeGeometry(physicsId)
     }
   })
