@@ -5,8 +5,7 @@
 import metaversefile from 'metaversefile'
 import * as THREE from 'three'
 
-const { useApp, useLoaders, useFrame, useCleanup, usePhysics, useInternals } =
-  metaversefile
+const { useApp, useLoaders, useFrame, useCleanup, usePhysics, useInternals } = metaversefile
 
 const baseUrl = import.meta.url.replace(/(\/)[^\/\/]*$/, '$1')
 
@@ -27,7 +26,7 @@ export default (e) => {
 
   const material = new THREE.MeshBasicMaterial({
     color: '#aa00ff',
-    wireframe: true,
+    wireframe: false,
   })
 
   const mesh = new THREE.Mesh(geometry, material)
